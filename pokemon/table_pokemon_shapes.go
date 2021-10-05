@@ -54,7 +54,6 @@ func tablePokemonShapes(ctx context.Context) *plugin.Table {
                                 Type:        proto.ColumnType_JSON,
                                 Hydrate:     getPokemonShape,
                         },
-
                         // Standard columns
                         {
                                 Name:        "title",

@@ -28,21 +28,9 @@ from
   pokemon_shape
 where
   name = 'ball'
+```  
   
-### List all Pokémon having shap as 'ball'
-
-```sql
-select
-  name,
-  id,
-  pokemon_species
-from
-  pokemon_shape
-where
-  name = 'ball'
-  
-  
-  ### List Pokémon shap whose id is 6
+### List Pokémon shape whose id is 6
 
 ```sql
 select
@@ -53,3 +41,4 @@ from
   pokemon_shape
 where
   id = 6
+```

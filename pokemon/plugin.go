@@ -9,12 +9,11 @@ import (
 
 func Plugin(ctx context.Context) *plugin.Plugin {
 	p := &plugin.Plugin{
-		Name:             "steampipe-plugin-pokemon",
-		DefaultTransform: transform.FromCamel(),
+		Name : "steampipe-plugin-pokemon",
+		DefaultTransform : transform.FromCamel(),
 		TableMap: map[string]*plugin.Table{
-			"pokemon_pokemon": tablePokemonPokemon(ctx),
-			"pokemon_shape": tablePokemonShapes(ctx),
-
+			"pokemon_pokemon" : tablePokemonPokemon(ctx),
+			"pokemon_shape" : tablePokemonShapes(ctx),
 		},
 	}
 	return p
