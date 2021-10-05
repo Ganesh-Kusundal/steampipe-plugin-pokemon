@@ -28,8 +28,8 @@ func tablePokemonShapes(ctx context.Context) *plugin.Table {
                                 Name:        "id",
                                 Description: "The identifier for this resource.",
                                 Type:        proto.ColumnType_INT,
-								Hydrate:     getPokemonShape,
-								Transform:   transform.FromGo(),
+                                Hydrate:     getPokemonShape,
+                                Transform:   transform.FromGo(),
                         },
                         {
                                 Name:        "name",
